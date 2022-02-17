@@ -10,4 +10,9 @@ input{
 }
 .savingerror{
     display:none;
+    background-color: rgb(224, 43, 37);
+    border:none;
+    border-radius: 5px;
+    padding:3px;
+    color:white;
 }
