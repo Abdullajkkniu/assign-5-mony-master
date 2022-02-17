@@ -27,10 +27,14 @@ function updateBalance() {
         totalExpAmount.innerText = '';
         balanceAmount.innerText = '';
         saveParcentage.value = '';
-        savingAmount.innerText='';
+        
         alert('Please enter a valid number');
         }
     else if(incomeValue < 0 || foodValue < 0 || rentValue < 0 || clothValue < 0 || newSaveValue < 0 || totalCost > incomeValue){
+        totalExpAmount.innerText = '';
+        balanceAmount.innerText = '';
+        savingAmount.innerText = '';
+        remainAmount.innerText = '';
         alert('Please enter a valid number');
         
     }
@@ -45,11 +49,14 @@ function updateBalance() {
     else {
         savingAmount.innerText = incomeValue * (saveValue / 100);
         savingAmountError.style.display = 'none';
+        
     }
 }
 // event listener start
 document.getElementById('calculate-amount').addEventListener('click', function () {
     updateBalance();
+    
+    
 })
 document.getElementById('save-income').addEventListener('click', function () {
     updateBalance()
