@@ -8,3 +8,6 @@ input{
     border:none;
     border-radius: 5px;;
 }
+.savingerror{
+    display:none;
+}
